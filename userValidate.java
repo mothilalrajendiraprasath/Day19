@@ -35,7 +35,7 @@ public class userValidate {
     }
 
     public void validatePassword(String word){
-        Pattern p = Pattern.compile("^(?=.*[A-Z])(?=.*[0-9])[A-Za-z]{8}");
+        Pattern p = Pattern.compile("^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{8}");
         Matcher m = p.matcher(word);
         boolean b= m.matches();
         if(b==false){
