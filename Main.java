@@ -13,5 +13,8 @@ public class Main {
         System.out.println("Enter the mail");
         String mail= sc.nextLine();
         validate.validateMail(mail);
+        System.out.println("Enter the phone number");
+        String num= sc.nextLine();
+        validate.validateNum(num);
     }
 }

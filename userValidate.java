@@ -25,5 +25,13 @@ public class userValidate {
         }
     }
 
+    public void validateNum(String num){
+        Pattern p = Pattern.compile("^[0-9]{2}[0-9]{10}$");
+        Matcher m = p.matcher(num);
+        boolean b= m.matches();
+        if(b==false){
+            System.out.println("phone number should be within 10 digit");
+        }
+    }
 
 }
