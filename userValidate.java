@@ -15,13 +15,5 @@ public class userValidate {
         }
     }
 
-    public void validateMail(String mail){
-        Pattern p = Pattern.compile("^[A-za-z.]+[A-za-z.]+@[a-z]{2}+.[a-z]{2}");
-        Matcher m = p.matcher(mail);
-        boolean b= m.matches();
-        if(b==false){
-            System.out.println("Check the mail");
-        }
-    }
 
 }
