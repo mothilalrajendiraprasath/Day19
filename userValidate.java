@@ -4,8 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class userValidate {
-    public static Pattern p ;
-    public static Matcher m;
+    
 
     public void validateName(String flname){
         Pattern p = Pattern.compile("^[A-Z]{1}[a-z]{2}\s[A-Z]{1}[a-z]{2}$");
